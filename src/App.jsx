@@ -25,6 +25,7 @@ const App = () => {
     } else if (timer === 0) {
       setTestIsActive(false); 
     }
+
   }, [timer, testIsActive]);
 
   function handleChange(e) {
@@ -59,6 +60,7 @@ const App = () => {
     setUserInput("")
     setFeedback([])
     setTestIsActive(true)
+    setwpm(0)
   }
 
   const renderTextWithFeedback = () => {
